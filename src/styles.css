@@ -6,7 +6,6 @@
 body {
     background-color: #487272;
     font-family: "Roboto", sans-serif;
-    ;
 }
 
 .container {
@@ -15,7 +14,7 @@ body {
 }
 
 main {
-    background-color: white;
+    background-color: rgb(252, 252, 252);
     text-align: center;
     padding: 1em;
     margin: 0 auto;
