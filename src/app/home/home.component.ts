@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
 
+export class HomeComponent {
+  welcomeImage: string = "images/autumnleaf.jpg";
+
+  changeImage(): void {
+    this.welcomeImage = "images/rosehip.jpg";
+  }
 }

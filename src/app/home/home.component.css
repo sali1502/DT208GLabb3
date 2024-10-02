@@ -1,6 +1,17 @@
 img {
     width: 100%;
     max-width: 250px;
-    margin-top: 3vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
 }
 
+button {
+    background-color: #487272;
+    color: rgb(255, 255, 255);
+    margin-top: 0.5vh;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 6px;
+    padding-left: 6px;
+    font-size: 0.8em;
+}
