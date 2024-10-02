@@ -5,7 +5,7 @@
 
 body {
     background-color: #487272;
-    font-family:"Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     ;
 }
 
@@ -16,5 +16,19 @@ body {
 
 main {
     background-color: white;
+    text-align: center;
     padding: 1em;
+    margin: 0 auto;
+    height: 80vh;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 5vh;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
 }
