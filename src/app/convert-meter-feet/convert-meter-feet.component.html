@@ -1,9 +1,9 @@
 <h2>Konvertering</h2>
 
-<p> Konvertera från meter till fot och vice versa.<br>
-    Välj det värde och den enhet du vill konvertera från.<br>
-    Tryck sedan på knappen för att konvertera.<br>
- </p>
+<p> Välj det värde och den enhet du vill konvertera från,
+    tryck sedan på knappen för att konvertera.</p>
+
+<h3>Konvertering mellan meter och fot</h3>
 
 <!-- Formulär för att konverera meter till fot och vice versa -->
 <div id="convert-form">
@@ -17,7 +17,7 @@
     </select>
 </div>
 
-<button (click)="convert()">Konvertera</button>
+<div><button (click)="convert()">Konvertera</button></div>
 
 <div id="result-text">
     <p>{{ result }}</p>

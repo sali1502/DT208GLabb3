@@ -1,0 +1,10 @@
+#about-container {
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.8em;
+}
