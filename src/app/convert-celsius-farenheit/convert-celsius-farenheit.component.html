@@ -2,7 +2,8 @@
 
 <div id="convert-form">
     <label for="inputValue">Ange temperatur:</label><br>
-    <input type="number" [(ngModel)]="inputValue" id="inputValue" placeholder="Ange temperatur"><br>
+    <input type="number" [(ngModel)]="inputValue" id="inputValue" placeholder="Ange temperatur" required=""><br>
+    
 
     <label for="unitSelect">Välj enhet:</label><br>
     <select [(ngModel)]="selectedUnit" id="unitSelect">
