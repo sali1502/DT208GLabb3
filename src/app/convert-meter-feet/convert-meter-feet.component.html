@@ -1,0 +1,24 @@
+<h2>Konvertering</h2>
+
+<p> Konvertera från meter till fot och vice versa.<br>
+    Välj det värde och den enhet du vill konvertera från.<br>
+    Tryck sedan på knappen för att konvertera.<br>
+ </p>
+
+<!-- Formulär för att konverera meter till fot och vice versa -->
+<div id="convert-form">
+    <label for="inputValue">Ange ett värde:</label><br>
+    <input type="number" [(ngModel)]="inputValue" id="inputValue" placeholder="Ange värde"><br>
+
+    <label for="unitSelect">Välj enhet:</label><br>
+    <select [(ngModel)]="selectedUnit" id="unitSelect">
+        <option value="meter">Meter</option>
+        <option value="feet">Fot</option>
+    </select>
+</div>
+
+<button (click)="convert()">Konvertera</button>
+
+<div id="result-text">
+    <p>{{ result }}</p>
+</div>
