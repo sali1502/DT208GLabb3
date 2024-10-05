@@ -11,9 +11,10 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.6);
-    padding: 10px 1em;
+    padding: 6px 1em;
     color: #000;
     text-decoration: none;
+    font-size: 0.9em;
 }
 
 nav ul li a:hover, nav ul li a.active {
