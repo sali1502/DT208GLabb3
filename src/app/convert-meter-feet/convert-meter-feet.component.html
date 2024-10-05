@@ -7,11 +7,12 @@
 
 <!-- Formulär för att konverera meter till fot och vice versa -->
 <div id="convert-form">
-    <label for="inputValue">Ange ett värde:</label><br>
-    <input type="number" [(ngModel)]="inputValue" id="inputValue" placeholder="Ange värde"><br>
+    <label for="inputValueMetFeet">Ange ett värde:</label><br>
+    <input type="number" [(ngModel)]="inputValueMetFeet" id="inputValueMetFeet" [ngModelOptions]="{standalone: true}"
+        placeholder="Ange värde" required=""><br>
 
-    <label for="unitSelect">Välj enhet:</label><br>
-    <select [(ngModel)]="selectedUnit" id="unitSelect">
+    <label for="unitSelectMetFeet">Välj enhet:</label><br>
+    <select [(ngModel)]="selectedUnitMetFeet" id="unitSelectMetFeet">
         <option value="meter">Meter</option>
         <option value="feet">Fot</option>
     </select>

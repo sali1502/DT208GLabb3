@@ -1,12 +1,13 @@
 <h3>Konvertering mellan celsius och farheheit</h3>
 
 <div id="convert-form">
-    <label for="inputValue">Ange temperatur:</label><br>
-    <input type="number" [(ngModel)]="inputValue" id="inputValue" placeholder="Ange temperatur" required=""><br>
-    
+    <label for="inputValueCelFar">Ange temperatur:</label><br>
+    <input type="number" [(ngModel)]="inputValueCelFar" id="inputValueCelFar" [ngModelOptions]="{standalone: true}"
+        placeholder="Ange temperatur" required=""><br>
 
-    <label for="unitSelect">Välj enhet:</label><br>
-    <select [(ngModel)]="selectedUnit" id="unitSelect">
+
+    <label for="unitSelectCelFar">Välj enhet:</label><br>
+    <select [(ngModel)]="selectedUnitCelFar" id="unitSelectCelFar">
         <option value="celsius">Celsius</option>
         <option value="farenheit">Farenheit</option>
     </select>

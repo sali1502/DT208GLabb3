@@ -11,8 +11,8 @@ import { FormsModule } from '@angular/forms';
 })
 
 export class ConvertMeterFeetComponent {
-  inputValue: number = 0; // Variabel för inputvärde
-  selectedUnit: string = 'meter'; // Standardval för rullgardinsmeny
+  inputValueMetFeet: number = 0; // Variabel för inputvärde
+  selectedUnitMetFeet: string = 'meter'; // Standardval för rullgardinsmeny
   result: string = ''; // Variabel för att lagra resultat
 
   // Funktion för att kontertera meter till fot
@@ -29,15 +29,15 @@ export class ConvertMeterFeetComponent {
 
   // Hämta värden från inputfält och rullgardinsmeny
   convert(): void {
-    let convertedValue: number;
+    let convertedValueMetFeet: number;
 
     // Konvertera efter val av enhet
-    if (this.selectedUnit === 'meter') {
-      convertedValue = this.meterToFeet(this.inputValue);
-      this.result = `${this.inputValue} meter är ${convertedValue.toFixed(2)} fot`;
+    if (this.selectedUnitMetFeet === 'meter') {
+      convertedValueMetFeet = this.meterToFeet(this.inputValueMetFeet);
+      this.result = `${this.inputValueMetFeet} meter är ${convertedValueMetFeet.toFixed(2)} fot`;
     } else {
-      convertedValue = this.feetToMeter(this.inputValue);
-      this.result = `${this.inputValue} fot är ${convertedValue.toFixed(2)} meter`;
+      convertedValueMetFeet = this.feetToMeter(this.inputValueMetFeet);
+      this.result = `${this.inputValueMetFeet} fot är ${convertedValueMetFeet.toFixed(2)} meter`;
 
     }
   }

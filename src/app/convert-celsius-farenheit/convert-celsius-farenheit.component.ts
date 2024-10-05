@@ -10,8 +10,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './convert-celsius-farenheit.component.css'
 })
 export class ConvertCelsiusFarenheitComponent {
-  inputValue: number = 0; // Variabel för inputvärde
-  selectedUnit: string = 'celsius'; // standardval för rullgardinsmeny
+  inputValueCelFar: number = 0; // Variabel för inputvärde
+  selectedUnitCelFar: string = 'celsius'; // standardval för rullgardinsmeny
   result: string = ''; // Variabel för att lagra resultat
 
   // Funktion för att konvertera Celsius till Farenheit
@@ -26,14 +26,14 @@ export class ConvertCelsiusFarenheitComponent {
 
   // Funktion för konvertering efter val av enhet
   convert(): void {
-    let convertedValue: number;
+    let convertedValueCelFar: number;
 
-    if (this.selectedUnit === 'celsius') {
-      convertedValue = this.celsiusToFarenheit(this.inputValue);
-      this.result = `${this.inputValue} °C är ${convertedValue.toFixed(2)} °F`;
+    if (this.selectedUnitCelFar === 'celsius') {
+      convertedValueCelFar = this.celsiusToFarenheit(this.inputValueCelFar);
+      this.result = `${this.inputValueCelFar} °C är ${convertedValueCelFar.toFixed(2)} °F`;
     } else {
-      convertedValue = this.farenheitToCelsius(this.inputValue);
-      this.result = `${this.inputValue} °F är ${convertedValue.toFixed(2)} °C`;
+      convertedValueCelFar = this.farenheitToCelsius(this.inputValueCelFar);
+      this.result = `${this.inputValueCelFar} °F är ${convertedValueCelFar.toFixed(2)} °C`;
     }
   }
 }
