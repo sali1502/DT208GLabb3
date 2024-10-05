@@ -1,7 +1,7 @@
 [build]
 base = "/"
 command = "ng build"
-publish = "dist/DT208GLabb3/browser"
+publish = "/opt/build/repo/dist/dt208-glabb3"
 
 [[redirects]]
 from = "/*"
