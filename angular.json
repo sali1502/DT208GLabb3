@@ -24,7 +24,7 @@
               {
                 "glob": "**/*",
                 "input": "public",
-                "netlify.toml"
+                "netlify: toml"
               }
             ],
             "styles": [
